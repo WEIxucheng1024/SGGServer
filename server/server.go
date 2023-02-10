@@ -44,12 +44,6 @@ func process(conn net.Conn){
 			}
 		}
 
-		for k, v := range UserChannles {
-			if k == string(buf[11:(n-2)]){
-				conn.Write([]byte("返回：" + string(buf[:n])))
-				v.
-			}
-		}
 
 		//服务器返回数据到客户端
 		conn.Write([]byte("返回：" + string(buf[:n])))
